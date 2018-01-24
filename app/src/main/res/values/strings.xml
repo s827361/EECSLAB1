@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">EECS1022 W18 Lab 1 :BMI Calculator</string>
+    <string-array name="Weightoption">
+        <item>Pound</item>
+        <item>KG</item>
+    </string-array>
+    <string-array name="Heightoption">
+        <item>Meters</item>
+        <item>Inches</item>
+    </string-array>
+
+</resources>

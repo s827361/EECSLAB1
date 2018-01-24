@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="ca.roumani.myapplication.BMI">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Name"
+        android:id="@+id/labelName"
+        android:layout_alignParentTop="true"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Inputname"
+        android:layout_below="@+id/labelName"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Weight"
+        android:id="@+id/labelWeight"
+        android:layout_below="@+id/Inputname"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Inputweight"
+        android:layout_below="@+id/labelWeight"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/Inputname"
+        android:layout_alignEnd="@+id/Inputname"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Height"
+        android:id="@+id/labelHeight"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/Inputweight"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Inputheight"
+        android:layout_below="@+id/labelHeight"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Compute Your BMI"
+        android:id="@+id/buttonCompute"
+        android:layout_below="@+id/Inputheight"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="104dp"
+        android:clickable="false"
+        android:onClick="ComputeBMIButtonclicked"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Answer"
+        android:id="@+id/labelAnswer"
+        android:layout_below="@+id/buttonCompute"
+        android:layout_toRightOf="@+id/labelWeight"
+        android:layout_toEndOf="@+id/labelWeight"
+        android:layout_marginTop="43dp"
+        android:textAlignment="center"/>
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinnerHeight"
+        android:layout_below="@+id/Inputweight"
+        android:layout_alignLeft="@+id/buttonCompute"
+        android:layout_alignStart="@+id/buttonCompute"
+        android:layout_alignRight="@+id/Inputweight"
+        android:layout_alignEnd="@+id/Inputweight"
+        android:entries="@array/Heightoption"/>
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinnerWeight"
+        android:layout_above="@+id/Inputweight"
+        android:layout_alignLeft="@+id/spinnerHeight"
+        android:layout_alignStart="@+id/spinnerHeight"
+        android:layout_alignRight="@+id/Inputweight"
+        android:layout_alignEnd="@+id/Inputweight"
+        android:entries="@array/Weightoption"/>
+
+</RelativeLayout>
