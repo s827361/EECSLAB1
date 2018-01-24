@@ -7,6 +7,7 @@
     <string-array name="Heightoption">
         <item>Meters</item>
         <item>Inches</item>
+        <item>Centimeters</item>
     </string-array>
 
 </resources>

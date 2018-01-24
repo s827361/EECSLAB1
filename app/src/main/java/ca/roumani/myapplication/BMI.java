@@ -51,6 +51,10 @@ public class BMI extends AppCompatActivity
             height= Double.parseDouble(textheight);
             height = height * 0.0254;
         }
+        else if (selectedItem2.equals("Centimeters")){
+            height= Double.parseDouble(textheight);
+            height = height * 0.01;
+        }
         if(selectedItem.equals("Pound")){
             weight= Double.parseDouble(textweight);
             weight = weight / 2.2046226;
